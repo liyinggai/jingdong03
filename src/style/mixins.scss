@@ -1,0 +1,18 @@
+@mixin ellipsis {
+    overflow: hidden;
+    //white-space 属性设置如何处理元素内的空白。nowrap不换行
+    white-space: nowrap;
+    //text-overflow 属性规定当文本溢出包含元素时发生的事情。ellipsis省略符号
+    text-overflow: ellipsis;
+}
+//导入、引用
+//@import 'url'  //在style标签中导入
+//@include ellipsis;  //style样式标签的选择器中引用
+
+    //隐藏滚动条,.div为ellipses所在父级的div。
+    //如 .aa {width:80%;@include ellipses}则为 .aa::-webkit-scrollbar
+    // .div::-webkit-scrollbar {
+    //   display: none;
+    // }
+
+
